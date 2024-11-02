@@ -49,5 +49,11 @@ $sidebar-duration: vars.$duration-medium;
     &.disable {
       display: flex;
     }
+
+    // temp for block-1.4
+    &.open {
+      transform: none;
+      box-shadow: none;
+    }
   }
 }

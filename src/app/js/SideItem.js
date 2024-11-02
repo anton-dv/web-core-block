@@ -10,7 +10,7 @@ export class SideItem {
     this.queryOpener = queryOpener;
 
     this.side = document.querySelector(queryItem);
-    this.opener = document.querySelector(queryOpener);
+    // this.opener = document.querySelector(queryOpener);
     this.closer = document.querySelector(queryCloser);
     this.duration = this.getDuration();
 
@@ -19,7 +19,7 @@ export class SideItem {
 
   #init() {
     this.veil.addEventListener('click', this.close.bind(this));
-    this.opener.addEventListener('click', this.open.bind(this));
+    // this.opener.addEventListener('click', this.open.bind(this));
     this.closer.addEventListener('click', this.close.bind(this));
     window.addEventListener('resize', this.#resizeHandler.bind(this));
 
@@ -29,29 +29,29 @@ export class SideItem {
   }
 
   open() {
-    this.side.classList.remove(this.disableClass);
-    if (this.eventer?.open) this.eventer.open(this);
+    // this.side.classList.remove(this.disableClass);
+    // if (this.eventer?.open) this.eventer.open(this);
 
-    setTimeout(() => {
-      this.side.classList.add(this.openClass);
-      document.body.classList.add('scroll-disable')
-      this.veil.classList.add('visible')
-    }, 10)
+    // setTimeout(() => {
+    //   this.side.classList.add(this.openClass);
+    //   document.body.classList.add('scroll-disable')
+    //   this.veil.classList.add('visible')
+    // }, 10)
 
-    this.opener.addEventListener.apply(document, ['focus', close]);
+    // this.opener.addEventListener.apply(document, ['focus', close]);
   }
 
   close() {
-    this.opener.removeEventListener('focus', close);
+    // this.opener.removeEventListener('focus', close);
 
-    this.side.classList.remove(this.openClass);
-    setTimeout(() => {
-      if (!this.side.classList.contains(this.openClass)) {
-        this.side.classList.add(this.disableClass);
-        document.body.classList.remove('scroll-disable')
-        this.veil.classList.remove('visible')
-      }
-    }, this.duration)
+    // this.side.classList.remove(this.openClass);
+    // setTimeout(() => {
+    //   if (!this.side.classList.contains(this.openClass)) {
+    //     this.side.classList.add(this.disableClass);
+    //     document.body.classList.remove('scroll-disable')
+    //     this.veil.classList.remove('visible')
+    //   }
+    // }, this.duration)
   }
 
   getDuration() {

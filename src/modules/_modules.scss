@@ -1,15 +1,6 @@
-@forward './card/card';
-@forward './card/card--brand';
-@forward './card/card--price';
-@forward './card/card--tech';
-@forward './card/card__text';
-
 @forward './list/list';
 @forward './list/list-lang/list-lang';
 @forward './list/list-lang/list-lang__btn';
-@forward './list/list-navigation/list-navigation';
 @forward './list/list-services/list-services';
 @forward './list/list-services/list-services--described';
 @forward './list/list-services/list-services__desc';
-
-@forward './form-message/form-message';

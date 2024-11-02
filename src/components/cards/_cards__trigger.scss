@@ -1,9 +1,0 @@
-@use '../vars';
-
-.cards__trigger.cards__trigger {
-  display: none;
-
-  @media (min-width: vars.$media-middle) {
-    display: block;
-  }
-}
