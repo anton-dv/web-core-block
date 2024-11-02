@@ -1,9 +1,0 @@
-@use '../vars';
-
-.cards__item.cards__item {
-  width: 240px;
-
-  @media (min-width: vars.$media-middle) {
-    width: 100%;
-  }
-}
