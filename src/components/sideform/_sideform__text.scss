@@ -1,0 +1,9 @@
+@use '../vars';
+
+.sideform__text {
+  padding-bottom: 17px;
+
+  @media (min-width: vars.$media-middle) {
+    padding-bottom: 21px;
+  }
+}

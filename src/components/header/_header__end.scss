@@ -1,0 +1,8 @@
+.header__end {
+    display: flex;
+    gap: 20px;
+
+    .header__line {
+        transform: translateY(4px);
+    }
+}

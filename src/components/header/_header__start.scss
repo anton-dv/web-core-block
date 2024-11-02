@@ -1,0 +1,23 @@
+@use '../vars';
+
+.header__start {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  .header__line {
+    display: none;
+  }
+
+  @media (min-width: vars.$media-middle) {
+    gap: 20px;
+
+    .header__line {
+      display: block;
+    }
+  }
+
+  @media (min-width: vars.$media-large) {
+    display: none;
+  }
+}

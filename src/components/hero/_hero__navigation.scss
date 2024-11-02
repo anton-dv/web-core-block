@@ -1,0 +1,15 @@
+@use '../vars';
+
+.hero__navigation {
+  position: absolute;
+  max-width: 100%;
+  top: 88px;
+
+  @media (min-width: vars.$media-middle) {
+    top: 96px;
+  }
+
+  @media (min-width: vars.$media-large) {
+    top: 91px;
+  }
+}

@@ -1,0 +1,13 @@
+@use '../vars';
+
+.article__end {
+  margin-inline: -16px;
+
+  @media (min-width: vars.$media-middle) {
+    margin-inline: 0;
+  }
+
+  @media (min-width: vars.$media-large) {
+    padding: 1px 0 0 4px;
+  }
+}

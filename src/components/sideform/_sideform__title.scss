@@ -1,0 +1,21 @@
+@use '../vars';
+
+.sideform__title {
+  display: none;
+  padding-left: 16px;
+
+  font-size: 1.5rem;
+  line-height: 24px;
+
+  &::after {
+    top: -12.6px;
+  }
+
+  &.visible {
+    display: block;
+  }
+
+  @media (min-width: vars.$media-middle) {
+    padding-left: 32px;
+  }
+}

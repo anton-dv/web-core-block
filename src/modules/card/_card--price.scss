@@ -1,0 +1,52 @@
+@use '../vars';
+
+.card--price {
+  flex-direction: column;
+  align-items: start;
+
+  height: 200px;
+  border: none;
+
+  padding: 18px 16px;
+
+  .btn {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+  }
+
+  @media (min-width: vars.$media-middle) {
+    flex-direction: row;
+    height: 64.8px;
+    padding-block: 23px;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 0;
+
+    .btn {
+      position: static;
+      margin-left: auto;
+    }
+
+    .card__text:nth-child(1) {
+      width: 54%;
+    }
+
+    .card__text:nth-child(2) {
+      width: 14%;
+    }
+  }
+
+  @media (min-width: vars.$media-large) {
+    padding-inline: 24px;
+    padding-block: 10px 15px;
+
+    .card__text:nth-child(1) {
+      width: 46.5%;
+    }
+
+    .card__text:nth-child(2) {
+      width: 22.5%;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+@use '../vars';
+
+.sidebar__end {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  max-height: 184px;
+
+  @media (min-width: vars.$media-large) {
+    max-height: 193px;
+  }
+}

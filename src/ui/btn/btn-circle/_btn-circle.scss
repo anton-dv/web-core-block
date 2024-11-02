@@ -1,0 +1,46 @@
+@use '../../vars';
+
+$btn-circle-color-primary: vars.$infra-red;
+$btn-circle-color-secondary: white;
+$btn-circle-color-light: vars.$infra-red-lighter;
+$btn-circle-duration: vars.$duration-fast;
+
+.btn-circle {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  overflow: hidden;
+
+  outline: 2px solid $btn-circle-color-primary;
+  outline-offset: -2px;
+
+  background-color: $btn-circle-color-primary;
+  transition: $btn-circle-duration ease-in-out outline-offset;
+
+  svg {
+    z-index: 10;
+    transition: $btn-circle-duration ease-in-out transform;
+  }
+
+  &:focus-visible {
+    outline-offset: 2px;
+  }
+
+  &:focus-visible svg,
+  &:hover svg {
+    transform: scale(120%);
+  }
+
+  &:active svg {
+    transform: scale(90%);
+  }
+}
+
+// <a class="btn btn-circle">
+//     <svg>..icon..</svg>
+// </a>

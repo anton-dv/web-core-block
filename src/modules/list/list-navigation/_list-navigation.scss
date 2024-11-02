@@ -1,0 +1,23 @@
+@use '../../vars';
+
+.list-navigation {
+  display: flex;
+  overflow-x: auto;
+  padding-inline: 16px 20px;
+
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+
+  @media (min-width: vars.$media-middle) {
+    padding-left: 24px;
+  }
+
+  @media (min-width: vars.$media-large) {
+    display: flex;
+    row-gap: 6px;
+    flex-wrap: wrap;
+
+    padding-left: 33px;
+  }
+}

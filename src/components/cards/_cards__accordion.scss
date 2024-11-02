@@ -1,0 +1,14 @@
+@use '../vars';
+
+.cards__accordion {
+  max-height: 190px;
+  transition: vars.$duration-very-long ease-in-out max-height;
+
+  &.open {
+    max-height: 500px;
+  }
+
+  @media (min-width: vars.$media-middle) {
+    margin-bottom: 18px;
+  }
+}

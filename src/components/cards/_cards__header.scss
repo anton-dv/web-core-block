@@ -1,0 +1,31 @@
+@use '../vars';
+
+.cards__header {
+  display: none;
+  padding: 15px;
+  padding-top: 10px;
+
+  h3:nth-child(1) {
+    width: 54%;
+  }
+
+  h3:nth-child(2) {
+    width: 14%;
+  }
+
+  @media (min-width: vars.$media-middle) {
+    display: flex;
+  }
+
+  @media (min-width: vars.$media-large) {
+    padding-inline: 24px;
+
+    h3:nth-child(1) {
+      width: 46.5%;
+    }
+
+    h3:nth-child(2) {
+      width: 22.5%;
+    }
+  }
+}

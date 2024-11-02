@@ -1,0 +1,27 @@
+@use './btn-circle' as *;
+
+.btn-circle--text {
+  display: inline-flex;
+  border-radius: 50px;
+  height: 32px;
+  width: unset;
+  padding-inline: 13px;
+  gap: 13px;
+
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.15px;
+  text-transform: uppercase;
+
+  color: $btn-circle-color-secondary;
+
+  svg {
+    height: 9px;
+    width: 13px;
+  }
+
+  path {
+    fill: $btn-circle-color-secondary;
+  }
+}

@@ -1,0 +1,13 @@
+@use '../../vars';
+
+.btn-arrow--openable {
+  transition: vars.$duration-medium ease-in-out transform;
+
+  &:active::after {
+    top: 7px;
+  }
+
+  &.open::after {
+    transform: rotate(180deg);
+  }
+}

@@ -1,0 +1,9 @@
+.card--tech {
+  flex-direction: column;
+
+  height: 160px;
+
+  .btn-circle {
+    align-self: flex-end;
+  }
+}

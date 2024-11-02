@@ -1,0 +1,7 @@
+@use '../vars';
+
+.header__line {
+  @media (min-width: vars.$media-large) {
+    display: none;
+  }
+}

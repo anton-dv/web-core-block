@@ -1,0 +1,7 @@
+@use '../vars';
+
+.input-message {
+  padding: 12px 17px;
+  border-radius: 9px;
+  border: 1px solid vars.$line-color;
+}

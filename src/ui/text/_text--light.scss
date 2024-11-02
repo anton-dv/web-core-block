@@ -1,0 +1,12 @@
+@use '../vars';
+
+.text--light {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+
+  @media (min-width: vars.$media-middle) {
+    line-height: 20px;
+  }
+}

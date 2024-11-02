@@ -1,0 +1,11 @@
+@use '../vars';
+
+.header {
+  border-bottom: 1px solid vars.$aquamarine-lighter;
+  background-color: vars.$background-secondary;
+
+  @media (min-width: vars.$media-large) {
+    border-bottom: none;
+    background-color: transparent;
+  }
+}

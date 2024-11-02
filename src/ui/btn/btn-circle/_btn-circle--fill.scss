@@ -1,0 +1,25 @@
+@use './btn-circle' as *;
+
+.btn-circle--fill {
+  path {
+    fill: $btn-circle-color-secondary;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+
+    background-image: radial-gradient(
+      $btn-circle-color-light 25%,
+      $btn-circle-color-primary 100%
+    );
+    transition: $btn-circle-duration ease-in-out opacity;
+  }
+
+  &:focus-visible::after,
+  &:hover::after {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,56 @@
+@use '../../vars';
+
+.btn-arrow {
+  position: relative;
+  width: min-content;
+  padding-inline: 32px 10px;
+
+  text-wrap: nowrap;
+  font-weight: 500;
+  text-decoration: none;
+  color: vars.$text-primary;
+
+  border-radius: 4px;
+  outline: 2px solid transparent;
+  outline-offset: -4px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    background: url('../../assets/img/btn-arrow.svg') no-repeat;
+    width: 10px;
+    height: 10px;
+    top: 7px;
+    left: 9px;
+    transition: vars.$duration-fast ease-in-out top;
+  }
+
+  &:active::after {
+    top: 5px;
+  }
+
+  transition: vars.$duration-fast ease-in-out outline-offset,
+    vars.$duration-fast ease-in-out outline-color,
+    vars.$duration-fast ease-in-out color;
+
+  &:hover {
+    color: vars.$aquamarine;
+  }
+
+  &:focus-visible {
+    outline-color: vars.$aquamarine-lighter;
+    outline-offset: 0;
+    color: vars.$text-primary;
+  }
+
+  @media (min-width: vars.$media-middle) {
+    padding-left: 33px;
+  }
+
+  @media (min-width: vars.$media-large) {
+    padding-left: 31px;
+    &::after {
+      left: 7px;
+    }
+  }
+}

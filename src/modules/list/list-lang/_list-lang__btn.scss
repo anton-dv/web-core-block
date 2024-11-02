@@ -1,0 +1,8 @@
+@use '../../vars';
+
+.list-lang__btn {
+  &.active:hover,
+  &.active {
+    color: vars.$text-navigation;
+  }
+}

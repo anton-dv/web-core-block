@@ -1,0 +1,15 @@
+@use '../vars';
+
+.cards--tech {
+  .cards__accordion {
+    max-height: 230px;
+
+    &.open {
+      max-height: 720px;
+    }
+
+    @media (min-width: vars.$media-middle) {
+      max-height: 189px;
+    }
+  }
+}

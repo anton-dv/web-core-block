@@ -1,0 +1,13 @@
+@use '../vars';
+
+.swiper.swiper {
+  padding-block: 16px 50px;
+
+  --swiper-pagination-bullet-horizontal-gap: 6px;
+  --swiper-pagination-bullet-size: 12px;
+  --swiper-pagination-bottom: 16px;
+
+  @media (min-width: vars.$media-middle) {
+    padding-block: 23px 30px;
+  }
+}

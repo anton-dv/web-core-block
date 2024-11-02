@@ -1,0 +1,15 @@
+@use '../vars';
+
+.sidebar__btn {
+  outline: none;
+  transition: vars.$duration-fast ease-in-out color;
+
+  &:hover {
+    color: vars.$aquamarine;
+  }
+
+  &.active,
+  &:focus {
+    color: vars.$text-navigation;
+  }
+}

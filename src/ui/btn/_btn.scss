@@ -1,0 +1,14 @@
+@use '../vars';
+
+.btn {
+  display: inline-block;
+  border: none;
+  padding: 0;
+
+  background-color: transparent;
+  cursor: pointer;
+
+  color: vars.$text-primary;
+  text-decoration: none;
+  font-style: normal;
+}

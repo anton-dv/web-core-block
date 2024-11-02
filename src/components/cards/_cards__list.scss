@@ -1,0 +1,19 @@
+@use '../vars';
+
+.cards__list.cards__list {
+  box-sizing: border-box;
+  padding-left: 16px;
+
+  @media (min-width: vars.$media-middle) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 16px;
+    column-gap: 24px;
+    padding-left: 0;
+  }
+
+  @media (min-width: vars.$media-large) {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 32px;
+  }
+}

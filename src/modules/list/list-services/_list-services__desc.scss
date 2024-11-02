@@ -1,0 +1,16 @@
+@use '../../vars';
+
+.list-services__desc {
+  font-size: 0;
+
+  @media (min-width: vars.$media-large) {
+    .list-services--described & {
+      padding-bottom: 3px;
+
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: 24px;
+      letter-spacing: -0.2px;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@use '../vars';
+
+.btn--aquatic {
+  overflow: visible;
+  border-radius: 4px;
+  outline: 2px solid transparent;
+  outline-offset: -2px;
+  transition-duration: vars.$duration-fast;
+
+  &:hover {
+    color: vars.$aquamarine;
+  }
+
+  &:focus-visible {
+    outline-color: vars.$aquamarine;
+    outline-offset: 2px;
+    color: vars.$text-primary;
+  }
+
+  &:active {
+    outline-offset: 3px;
+  }
+}

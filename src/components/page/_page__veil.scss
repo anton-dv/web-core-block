@@ -1,0 +1,36 @@
+@use '../vars';
+
+.page__veil {
+  position: absolute;
+  inset: 0;
+  opacity: 96.05%;
+  background-color: vars.$background-secondary;
+
+  animation: veil-hide vars.$duration-medium ease-in-out 1 normal both;
+
+  &.visible {
+    animation-name: veil-show;
+  }
+}
+
+@keyframes veil-show {
+  from {
+    z-index: 0;
+    opacity: 0;
+  }
+  to {
+    z-index: 20;
+    opacity: 96.05%;
+  }
+}
+
+@keyframes veil-hide {
+  from {
+    z-index: 20;
+    opacity: 96.05%;
+  }
+  to {
+    z-index: 0;
+    opacity: 0;
+  }
+}

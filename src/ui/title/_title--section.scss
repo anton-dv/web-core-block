@@ -1,0 +1,27 @@
+@use '../vars';
+
+.title--section {
+  padding: 16px;
+
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: vars.$text-navigation;
+  text-transform: uppercase;
+
+  border-top: 1px solid vars.$aquamarine-lighter-more;
+  background-image: linear-gradient(
+    to right,
+    transparent,
+    vars.$background-secondary
+  );
+
+  @media (min-width: vars.$media-middle) {
+    padding-inline: 24px;
+  }
+
+  @media (min-width: vars.$media-large) {
+    padding-inline: 32px;
+  }
+}

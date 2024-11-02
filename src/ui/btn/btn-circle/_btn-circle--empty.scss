@@ -1,0 +1,10 @@
+@use './btn-circle' as *;
+
+.btn-circle--empty {
+  border: 2px solid $btn-circle-color-primary;
+  background-color: transparent;
+
+  path {
+    fill: $btn-circle-color-primary;
+  }
+}

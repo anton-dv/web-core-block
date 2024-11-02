@@ -1,0 +1,19 @@
+@use '../vars';
+
+.header__list {
+  &:nth-child(1) {
+    display: none;
+  }
+
+  @media (min-width: vars.$media-middle) {
+    &:nth-child(1) {
+      display: flex;
+    }
+  }
+
+  @media (min-width: vars.$media-large) {
+    &:nth-child(1) {
+      display: none;
+    }
+  }
+}

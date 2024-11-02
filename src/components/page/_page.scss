@@ -1,0 +1,8 @@
+@use '../vars';
+
+.page {
+  position: relative;
+  @media (min-width: vars.$media-middle) {
+    display: flex;
+  }
+}

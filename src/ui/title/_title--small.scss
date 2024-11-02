@@ -1,0 +1,10 @@
+@use '../vars';
+
+.title--small {
+  opacity: 72.18%;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  letter-spacing: 0;
+  color: vars.$text-navigation;
+}
