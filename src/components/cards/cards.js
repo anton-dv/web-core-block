@@ -29,15 +29,15 @@ const swiperConfig = {
 }
 
 const swiperBrand = new Swiper('.swiper-brand', swiperConfig);
-const swiperTech = new Swiper('.swiper-tech', swiperConfig);
-const swiperPrice = new Swiper('.swiper-prices', swiperConfig);
+// const swiperTech = new Swiper('.swiper-tech', swiperConfig);
+// const swiperPrice = new Swiper('.swiper-prices', swiperConfig);
 
 window.addEventListener('resize', () => {
   const width = document.documentElement.clientWidth;
   if (width < 768) return
 
   swiperBrand.slideTo(0);
-  swiperTech.slideTo(0);
-  swiperPrice.slideTo(0);
+  // swiperTech.slideTo(0);
+  // swiperPrice.slideTo(0);
 });
 

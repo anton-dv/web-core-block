@@ -1,54 +1,6 @@
-@forward './page/page';
-@forward './page/page__veil';
-
-@forward './order/order';
-@forward './order/order__text';
-@forward './order/order__link';
-
-@forward './footer/footer';
-@forward './footer/footer__wrapper';
-
-@forward './article/article';
-@forward './article/article__start';
-@forward './article/article__end';
-@forward './article/article__content';
-@forward './article/article__text';
-@forward './article/article__image';
-
 @forward './cards/cards';
-@forward './cards/cards--tech';
-@forward './cards/cards--prices';
-@forward './cards/cards__header';
 @forward './cards/cards__list';
 @forward './cards/cards__item';
 @forward './cards/cards__accordion';
 @forward './cards/cards__trigger';
 @forward './cards/swiper';
-
-@forward './header/header';
-@forward './header/header__wrapper';
-@forward './header/header__start';
-@forward './header/header__end';
-@forward './header/header__list';
-@forward './header/header__line';
-
-@forward './hero/hero';
-@forward './hero/hero__title';
-@forward './hero/hero__navigation';
-
-@forward './sidebar/sidebar';
-@forward './sidebar/sidebar__wrapper';
-@forward './sidebar/sidebar__head';
-@forward './sidebar/sidebar__start';
-@forward './sidebar/sidebar__end';
-@forward './sidebar/sidebar__nav';
-@forward './sidebar/sidebar__contact';
-@forward './sidebar/sidebar__list';
-@forward './sidebar/sidebar__btn';
-
-@forward './sideform/sideform';
-@forward './sideform/sideform__wrapper';
-@forward './sideform/sideform__closer';
-@forward './sideform/sideform__title';
-@forward './sideform/sideform__form';
-@forward './sideform/sideform__text';
