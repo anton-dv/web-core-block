@@ -22,7 +22,8 @@ $sidebar-duration: vars.$duration-medium;
   box-shadow: 0 0 0 transparent;
 
   transition: $sidebar-duration ease-in-out transform,
-    $sidebar-duration ease-in-out box-shadow;
+    $sidebar-duration ease-in-out box-shadow,
+    $sidebar-duration ease-in-out width;
 
   &.open {
     transform: translateX(100vw);
