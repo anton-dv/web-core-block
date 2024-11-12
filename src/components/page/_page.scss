@@ -1,6 +1,9 @@
 @use '../vars';
 
 .page {
+  max-width: 1600px;
+  margin-inline: auto;
+
   position: relative;
   @media (min-width: vars.$media-middle) {
     display: flex;
